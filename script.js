@@ -239,9 +239,9 @@
 //   console.log(i)   
 // }
 
-if(true){
- console.log("hello");
-}
+// if(true){
+//  console.log("hello");
+// }
 
 
 // var i = 0;
@@ -249,3 +249,126 @@ if(true){
 //     i++;
 //     console.log(i);
 // } while(false)
+
+
+// for (let i=1; i<=10; i++){
+//     console.log(i)
+// }
+
+
+
+// let arr = [1,2,3,4,5,6,7,8,9];
+
+// for(let i = 0; i < arr.length; i++) {
+    
+//     console.log(arr[i]);
+// }
+
+// arr.push("varun")
+// arr.pop(7)
+
+// arr.unshift("")
+
+// console.log(arr)
+
+
+
+
+// let varun = ["Banglore","Mumbai","Pune","Solapur","Vijayapur"]
+
+// for (let i = 0; i < varun.length; i++) {
+//     console.log(varun[i])
+// }
+
+
+// let array = [1, 2, 3, 4, 5];
+// for (let i = 0; i < array.length; i++) {
+//   console.log(array[i]);
+// }
+
+
+
+// for of loop
+
+// let array = [1, 2, 3, 4, 5];
+// for (let value of array) {
+//   console.log(value);
+// }
+
+
+// forEach Method
+
+// let array = [1, 2, 3, 4, 5];
+// array.forEach(function(value) {
+//   console.log(value);
+// });
+
+
+// for...in Loop
+
+// let array = [1, 2, 3, 4, 5];
+// for (let index in array) {
+//   console.log(array[index]);
+// }
+
+
+
+// map Method
+
+// let array = [1, 2, 3, 4, 5];
+// let newArray = array.map(function(value) {
+//   return value * 2;
+// });
+// console.log(newArray);
+
+
+// find out the data type between integer and string
+
+// pata lagao konsa data type hai 
+
+// float,integer,string,boolean 
+
+
+// let a = 3
+
+// if ( a == "integer"){
+//  console.log("its a integer")
+// }
+
+
+// else if (a == "String"){
+//     console.log("its a String")
+// }
+
+
+// function determineType(value) {
+
+//   let value = 1
+   
+
+
+
+
+  function determineType(value) {
+    if (typeof value === 'string') {
+      return 'string';
+    } else if (typeof value === 'boolean') {
+      return 'boolean';
+    } else if (typeof value === 'number') {
+      if (Number.isInteger(value)) {
+        return 'integer';
+      } else {
+        return 'float';
+      }
+    } else {
+      return 'unknown type';
+    }
+  }
+  
+
+  console.log(determineType('hello'));
+  console.log(determineType(true));   
+  console.log(determineType(42));      
+  console.log(determineType(3.14));    
+  console.log(determineType([]));      
+
